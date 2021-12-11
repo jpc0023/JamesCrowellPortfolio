@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(230, 230, 230, .25);
+    margin: 0;
+}
+
+header {
+    padding: 20px 0 20px 15px;
+    background-color: rgb(62, 65, 68);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+footer {
+    display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0px 30px;
+	width: 100%;
+	justify-content: space-between;
+	height: auto;
+}
+
+.title {
+    padding: auto;
+    margin: 0;
+    justify-self: left;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(62, 65, 68);
+    margin: 0;
+    background-color: rgb(140, 204, 204);
+    padding: 2px 10px 2px 20px;
+    
+}
+
+header nav {
+    padding: 0;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: 550;
+    font-size: 1.55vw;
+    color: rgb(140, 204, 204);
+    margin-left: 25px;
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-image: url("./hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+    height: 225px;
+    width: 100%;
+}
+
+.hero_subtitle {
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    background-color: rgb(140, 204, 204);
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
+    width: 320px;
+}
+
+.hero_subtitle h3 {
+    padding-top: 7px;
+    padding-right: 0;
+    position: relative;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.hero_subtitle h3:hover {
+    font-size: 66px;
+    color: sienna;
+    transform: scale(0.5) translate(-100%, -100%);
+}
+
+.section_label {
+    width: 20%;
+    display: inline-block;
+    margin-left: 0;
+    border-right: rgb(62, 65, 68);
+    border-right: 5px solid;
+    align-content: right;
+    padding: 0;
+}
+
+.section_label h2 {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 48px;
+}
+
+.section_label h2:hover {
+    transform: skew(30deg, 20deg);
+}
+
+.about_content {
+    float: right;
+    margin-right: 30px;
+    padding: 20px;
+    clear: both;
+    width: 75%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(230, 230, 230, .25);
+}
+
+.featured-image img {
+    max-width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.featured .description {
+    background-color: rgb(140, 204, 204);
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    padding: 2px;
+    height: 86px;
+}
+
+.featured .description h2 {
+    padding: 1px 0px;
+    margin: 1px 6px 0 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.featured .description p {
+    padding: 10px;
+}
+
+.work_content {
+    margin-right: 30px;
+    padding: 0;
+    clear: both;
+    float: right;
+    width: 75%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured {
+    position: relative;
+    margin-top: 0;
+    border: 2px solid rgb(140, 204, 204);
+}
+
+.smaller {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    padding: 0;
+    margin: 10px 3px;
+    height: 148px;
+    position: relative;
+    border: 2px solid rgb(140, 204, 204);
+}
+
+.smaller .description {
+    background-color: rgb(140, 204, 204);
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    padding: 2px;
+    height: 58px;
+}
+
+.smaller .description h2 {
+    padding: 1px 0px;
+    margin: 1px 6px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.smaller .description:hover {
+    transform: skew(30deg, 20deg);
+}
+
+.description p {
+    padding: 3px 0px 3px 8px;
+    font-size: 18px;
+}
+
+.smaller img {
+    object-fit: cover;
+    width: 100%;
+    height: 144px;
+    top: 0;
+}
