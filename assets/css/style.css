@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+a:hover {
+    color: #fce138;
+}
+
 header {
     padding: 20px 0 20px 15px;
     background-color: rgb(62, 65, 68);
@@ -91,7 +95,7 @@ section {
     flex-wrap: wrap;
     align-items: flex-start;
     position: relative;
-    height: 225px;
+    height: 140px;
     width: 100%;
 }
 
@@ -116,12 +120,6 @@ section {
     font-style: italic;
 }
 
-.hero_subtitle h3:hover {
-    font-size: 66px;
-    color: sienna;
-    transform: scale(0.5) translate(-100%, -100%);
-}
-
 .section_label {
     width: 20%;
     display: inline-block;
@@ -136,10 +134,7 @@ section {
     text-align: right;
     padding-right: 10px;
     font-size: 48px;
-}
-
-.section_label h2:hover {
-    transform: skew(30deg, 20deg);
+    color: #024e76;
 }
 
 .about_content {
@@ -153,16 +148,41 @@ section {
     background-color: rgb(230, 230, 230, .25);
 }
 
-.featured-image img {
-    max-width: 100%;
+.featured {
+    width: 99%;
+    margin-left: 3px;
+    margin-right: 9px;
+    border: 2px solid rgb(140, 204, 204);
+    position: relative;
+}
+
+.featured:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.smaller:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.featured-image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+.featured-image img{
+    width: 100%;
     margin: 0;
-    display: block;
+    object-fit: cover;
 }
 
 .featured .description {
     background-color: rgb(140, 204, 204);
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 0;
     padding: 2px;
     height: 86px;
@@ -189,12 +209,6 @@ section {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-}
-
-.featured {
-    position: relative;
-    margin-top: 0;
-    border: 2px solid rgb(140, 204, 204);
 }
 
 .smaller {
@@ -224,10 +238,6 @@ section {
     font-weight: bold;
 }
 
-.smaller .description:hover {
-    transform: skew(30deg, 20deg);
-}
-
 .description p {
     padding: 3px 0px 3px 8px;
     font-size: 18px;
@@ -238,4 +248,28 @@ section {
     width: 100%;
     height: 144px;
     top: 0;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+footer ul li {
+    padding: 10px 15px;
+    font-weight: 550;
+    font-size: 1.55vw;
+    color: rgb(140, 204, 204);
+    margin-left: 25px;
+}
+
+footer ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
